@@ -15,7 +15,7 @@ body {
   color: #fef2bf;
   font-family: 'Press Start 2P';
   position: absolute;
-  margin: 55px 0 0 5%;
+  margin: 100px 0 0 3%;
 }
 
 .btn {
@@ -62,7 +62,8 @@ body {
 .track{
   color: #fef2bf;
   font-family: 'Press Start 2P';
-  position: absolute;  
-  margin-left: 70%;
+  position: absolute;
+  margin-top: 100px;  
+  margin-left: 76%;
   line-height: 50px;
 }
