@@ -15,6 +15,15 @@ $(document).on("keypress",function(){
   }
 })
 
+$('#level-title').on("click",function(){
+  if(keyTrack===0)
+  {
+    nextSequence();
+    $("#level-title").hide()
+    $(".rules").hide();
+  }
+})
+
 //creating sequence
 
 function nextSequence() {
@@ -83,7 +92,7 @@ function checkanswer()
 //gameOver Restart
 function gameOver()
 {
-  $("#level-title").html("Game Over Press any Key to restart");
+  $("#level-title").html("Game Over Press any Key or Click here to restart");
   $("#level-title").show();
   playSound('wrong');
   score=0
