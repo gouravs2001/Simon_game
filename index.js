@@ -12,6 +12,8 @@ $(document).on("keypress",function(){
     nextSequence();
     $("#level-title").hide()
     $(".rules").hide();
+    $(".score").html("Score <br> "+score);
+
   }
 })
 
@@ -21,6 +23,7 @@ $('#level-title').on("click",function(){
     nextSequence();
     $("#level-title").hide()
     $(".rules").hide();
+    $(".score").html("Score <br> "+score);
   }
 })
 
@@ -84,7 +87,7 @@ function checkanswer()
     userClickedPattern=[];
     setTimeout(function(){nextSequence()},1000);
     score=score+gamePattern.length;
-    $(".score").html("Score <br>"+score);
+    $(".score").html("Score <br> "+score);
   }
   else gameOver();
 }
@@ -95,7 +98,7 @@ function gameOver()
   $("#level-title").html("Game Over Press any Key or Click here to restart");
   $("#level-title").show();
   playSound('wrong');
-  score=0
+  score=0;
   keyTrack=0;
   gamePattern=[];
   userClickedPattern=[];
