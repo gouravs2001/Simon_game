@@ -9,13 +9,14 @@ body {
   font-size: 2.5rem;
   margin:  5%;
   color: #FEF2BF;
+  line-height: 50px;
 }
 
 .score {
   color: #fef2bf;
   font-family: 'Press Start 2P';
   position: absolute;
-  margin: 100px 0 0 3%;
+  margin: 100px 0 0 1%;
 }
 
 .btn {
