@@ -84,7 +84,7 @@ function checkanswer()
     userClickedPattern=[];
     setTimeout(function(){nextSequence()},1000);
     score=score+gamePattern.length;
-    $(".score").html("Score "+score);
+    $(".score").html("Score <br>"+score);
   }
   else gameOver();
 }
