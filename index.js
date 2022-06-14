@@ -16,6 +16,15 @@ $(document).keypress(function(){
     $(".rules").hide();
   }
 })
+$(document).click(function(){
+  if(keyTrack===0)
+  {
+    nextSequence();
+    $("#level-title").html("Level "+level);
+    $(".score").html("Score "+score);
+    $(".rules").hide();
+  }
+})
 
 //creating sequence
 
